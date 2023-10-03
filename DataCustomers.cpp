@@ -159,7 +159,7 @@ std::string randSNM(vectMapsString &names, mapVects &midnames, mapVects &surname
     std::map<std::string, std::string> nameElem = names[idName];
     auto iter = nameElem.begin(); 
     name = iter->first;
-    if(iter->second != "u\r")
+    if(iter->second != "u\r" && iter->second != "u")
     {
         int idMid = rand() % (midnames[iter->second].size() - 1);
         midname = midnames[iter->second][idMid];
